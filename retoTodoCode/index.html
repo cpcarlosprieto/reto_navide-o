@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Desafío Navideño</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="section form-section">
+        <h1>Desafío Navideño</h1>
+        <p id="subtitulo">
+          Reto de TodoCode con la profe <strong>Luisina de Paula</strong>.
+        </p>
+        <div class="main-container">
+          <div id="emoji-container"></div>
+          <div id="game-container">
+            <label for="emoji-select">Elige un emoji:</label>
+            <select id="emoji-select"></select>
+            <label for="repeticiones-input"
+              >Ingrese la cantidad de repeticiones:</label
+            >
+            <input type="number" id="repeticiones-input" min="0" step="1" />
+            <button id="verificar-btn">Verificar</button>
+            <div id="matriz-container"></div>
+            <div id="resultado-container"></div>
+            <button id="reiniciar-btn">Reiniciar</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="section info-section">
+        <h2>Información Seleccionada</h2>
+        <div id="selected-info">
+          <p id="selected-emoji"><strong>Emoji seleccionado: </strong></p>
+          <p id="selected-repeticiones">
+            <strong>Repeticiones seleccionadas: </strong>
+          </p>
+          <p id="emoji-count">
+            <strong>Repeticiones encontradas en la matriz: </strong>
+          </p>
+          <p id="result-message"><strong>Resultado: </strong></p>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
